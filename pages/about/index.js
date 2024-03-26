@@ -30,68 +30,6 @@ import {
   SiFigma,
 } from 'react-icons/si';
 
-//  about data
-// export const aboutData = [
-//   {
-//     title: 'skills',
-//     info: [
-//       {
-//         title: 'Frontend',
-//         icons: [
-//           <span key="a" className='text-sm flex justify-center items-center'><FaHtml5 />HTML5</span>,
-//           <span key="a" className='text-sm flex justify-center items-center'><FaCss3 />CSS3</span>,
-//           <span key="a" className='text-sm flex justify-center items-center'> <FaJs />JavaScript</span>,
-//           <span key="a" className='text-sm flex justify-center items-center'> <SiTypescript />TypeScript</span>,
-//           <span key="a" className='text-sm flex justify-center items-center'> <FaReact />ReactJs</span>,
-//           <span key="a" className='text-sm flex justify-center items-center'> <SiNextdotjs />NextJs</span>,
-
-//         ],
-//       },
-//       {
-//         title: 'Backend',
-//         icons: [
-//           <span key="a" className='text-sm flex justify-center items-center'><FaNode />NodeJs</span>,
-//           <span key="a" className='text-sm flex justify-center items-center'><FaNodeJs />ExpressJs</span>,
-//           <span key="a" className='text-sm flex justify-center items-center'> <SiMongodb />MongoDB</span>,
-//           <span key="a" className='text-sm flex justify-center items-center'> <FaLaravel />Laravel</span>,
-//           <span key="a" className='text-sm flex justify-center items-center'> <SiPostgresql />PostgreSQL</span>,
-//         ],
-//       },
-//       {
-//         title: 'UI/UX Design',
-//         icons: [
-//           <span key="a" className='text-sm flex justify-center items-center'> <FaFigma />Figma</span>,
-//           <span key="a" className='text-sm flex justify-center items-center'> <SiAdobephotoshop />AdobePhotoshop</span>,
-//         ],
-//       },
-//     ],
-//   },
-
-//   {
-//     title: 'experience',
-//     info: [
-//       {
-//         title: 'Intern Full-stack Developer - Robotbulls, Geneva, Switzerland',
-//         stage: '02/2024 - Present',
-//       },
-//       {
-//         title: 'Mentor - University of Lodz',
-//         stage: '2020 - 2023',
-//       },
-
-//     ],
-//   },
-//   {
-//     title: 'credentials',
-//     info: [
-//       {
-//         title: 'Bachelor of Computer Science - University of Lodz, Lodz, Poland',
-//         stage: '2019 - 2024',
-//       },
-//     ],
-//   },
-// ];
-
 // components
 
 import Circles from '../../components/Circles';
@@ -109,7 +47,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className='h-full bg-primary/30 py-32 text-center xl:text-left'>
+    <div className='h-[90vh] bg-primary/30 py-32 text-center xl:text-left overflow-y-auto'>
       <Circles />
       {/* avatar img */}
       <motion.div
@@ -123,13 +61,13 @@ const About = () => {
       </motion.div>
       <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6'>
         {/* text */}
-        <div className='flex-1 flex flex-col justify-center'>
+        <div className='flex-1 flex flex-col justify-center w-full sm:pt-16  lg:pt-0'>
           <motion.h3
             variants={fadeIn('right', 0.2)}
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='text-4xl'
+            className='font-bold lg:text-4xl sm:text-xl'
 
           >
             Passionate <span className='text-accent'>Full-Stack Developer</span> Building Tomorrow's Web Solutions Today.
@@ -139,7 +77,7 @@ const About = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='max-w-[500px] mx-auto xl:mx-0 xl:my-5 mb-6 xl:mb-12 px-2 xl:px-0'
+            className=' mx-auto lg:mx-0  md:my-5 mb-6 md:mb-12 px-2 lg:px-0'
           >
             2 years ago, I began freelancing as a developer. Since then, I've
             done remote work for many clients, counsulted for startups, and
@@ -152,7 +90,7 @@ const About = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8'
+            className=' md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8'
           >
             <div className='flex flex-1 xl:gap-x-6'>
               {/* experience */}
@@ -192,7 +130,7 @@ const About = () => {
           initial='hidden'
           animate='show'
           exit='hidden'
-          className='flex flex-col w-full xl:max-w-[48%] h-[480px]'
+          className='flex flex-col w-full xl:max-w-[52%] h-[480px]'
         >
           <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'>
             <div
@@ -220,7 +158,7 @@ const About = () => {
               credentials
             </div>
           </div>
-          <div className='py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start'>
+          <div className='py-5 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start'>
             {index === 0 && (
               <div>
 
@@ -273,12 +211,17 @@ const About = () => {
               </div>
             )}
             {index === 1 && (
-              <div className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'>
-                <div className='font-light mb-2 md:mb-0'>Intern Full-stack Developer - Robotbulls, Geneva, Switzerland</div>
-                <div className='hidden md:flex'>-</div>
-                <div>02/2024 - Present</div>
-                <div>Mentor - University of Lodz</div>
-                <div>2020 - 2023</div>
+              <div className='items-center text-white/60'>
+                <div className='flex font-light mb-2 gap-x-1'>
+                  <div><span className='font-semibold'>Intern</span> - Full-stack Developer - Robotbulls, Annemasse, France</div>
+                  <div>-</div>
+                  <div>02/2024 - Present</div>
+                </div>
+                <div>
+                  <div>
+                    <span className='font-semibold'>Mentor</span> - University of Łódź - 2020 - 2023
+                  </div>
+                </div>
               </div>
             )}
             {index === 2 && (

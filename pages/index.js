@@ -1,5 +1,3 @@
-// next image
-import Image from 'next/image';
 
 // components
 import ParticlesContainer from '../components/ParticlesContainer';
@@ -26,10 +24,9 @@ const Home = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='h1 md:pt-0 text-[25px] md:text-6xl'
+            className='h1 md:pt-0 lg:pt-0 xl:pt-0 sm:pt-16 sm:mb-3 text-[25px] lg:text-6xl md:text-3xl'
           >
-
-            <span className='text-accent'>Full-stack developer</span>
+            <span className='text-accent '>Full-stack developer</span>
           </motion.h1>
           {/* subtitle */}
           <motion.p
@@ -37,7 +34,7 @@ const Home = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 xl:text-xl'
+            className=' xl:max-w-xl mx-auto xl:mx-0 md:mb-20 sm:mb-5 xl:mb-16 xl:text-xl lg:text-2xl sm:text-sm md:mt-5  '
           >
             Passionate and versatile full-stack developer with extensive hands-on experience in building robust and scalable web applications. With a strong foundation in both frontend and backend technologies, I specialize in utilizing cutting-edge tools and frameworks to bring innovative ideas to life.
           </motion.p>

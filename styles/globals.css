@@ -57,7 +57,3 @@
     @apply w-full h-[180px] p-6 capitalize rounded-lg resize-none;
   }
 }
-
-link[rel="icon"] {
-  border-radius: 50%;
-}
