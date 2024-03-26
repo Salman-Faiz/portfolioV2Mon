@@ -8,6 +8,8 @@ import {
   FaCss3,
   FaJs,
   FaReact,
+  FaBootstrap,
+  FaSass,
   FaNodeJs,
   FaNode,
   FaLaravel,
@@ -17,81 +19,86 @@ import {
 import {
   SiNextdotjs,
   SiPostgresql,
+  SiTailwindcss,
   SiFramer,
   SiTypescript,
   SiMongodb,
   SiAdobephotoshop,
+  SiJavascript,
+  SiPhotopea,
+  SiExpress,
+  SiFigma,
 } from 'react-icons/si';
 
 //  about data
-export const aboutData = [
-  {
-    title: 'skills',
-    info: [
-      {
-        title: 'Frontend',
-        icons: [
-          <span key="a" className='text-sm flex justify-center items-center'><FaHtml5 />HTML5</span>,
-          <span key="a" className='text-sm flex justify-center items-center'><FaCss3 />CSS3</span>,
-          <span key="a" className='text-sm flex justify-center items-center'> <FaJs />JavaScript</span>,
-          <span key="a" className='text-sm flex justify-center items-center'> <SiTypescript />TypeScript</span>,
-          <span key="a" className='text-sm flex justify-center items-center'> <FaReact />ReactJs</span>,
-          <span key="a" className='text-sm flex justify-center items-center'> <SiNextdotjs />NextJs</span>,
+// export const aboutData = [
+//   {
+//     title: 'skills',
+//     info: [
+//       {
+//         title: 'Frontend',
+//         icons: [
+//           <span key="a" className='text-sm flex justify-center items-center'><FaHtml5 />HTML5</span>,
+//           <span key="a" className='text-sm flex justify-center items-center'><FaCss3 />CSS3</span>,
+//           <span key="a" className='text-sm flex justify-center items-center'> <FaJs />JavaScript</span>,
+//           <span key="a" className='text-sm flex justify-center items-center'> <SiTypescript />TypeScript</span>,
+//           <span key="a" className='text-sm flex justify-center items-center'> <FaReact />ReactJs</span>,
+//           <span key="a" className='text-sm flex justify-center items-center'> <SiNextdotjs />NextJs</span>,
 
-        ],
-      },
-      {
-        title: 'Backend',
-        icons: [
-          <span key="a" className='text-sm flex justify-center items-center'><FaNode />NodeJs</span>,
-          <span key="a" className='text-sm flex justify-center items-center'><FaNodeJs />ExpressJs</span>,
-          <span key="a" className='text-sm flex justify-center items-center'> <SiMongodb />MongoDB</span>,
-          <span key="a" className='text-sm flex justify-center items-center'> <FaLaravel />Laravel</span>,
-          <span key="a" className='text-sm flex justify-center items-center'> <SiPostgresql />PostgreSQL</span>,
-        ],
-      },
-      {
-        title: 'UI/UX Design',
-        icons: [
-          <span key="a" className='text-sm flex justify-center items-center'> <FaFigma />Figma</span>,
-          <span key="a" className='text-sm flex justify-center items-center'> <SiAdobephotoshop />AdobePhotoshop</span>,
-        ],
-      },
-    ],
-  },
+//         ],
+//       },
+//       {
+//         title: 'Backend',
+//         icons: [
+//           <span key="a" className='text-sm flex justify-center items-center'><FaNode />NodeJs</span>,
+//           <span key="a" className='text-sm flex justify-center items-center'><FaNodeJs />ExpressJs</span>,
+//           <span key="a" className='text-sm flex justify-center items-center'> <SiMongodb />MongoDB</span>,
+//           <span key="a" className='text-sm flex justify-center items-center'> <FaLaravel />Laravel</span>,
+//           <span key="a" className='text-sm flex justify-center items-center'> <SiPostgresql />PostgreSQL</span>,
+//         ],
+//       },
+//       {
+//         title: 'UI/UX Design',
+//         icons: [
+//           <span key="a" className='text-sm flex justify-center items-center'> <FaFigma />Figma</span>,
+//           <span key="a" className='text-sm flex justify-center items-center'> <SiAdobephotoshop />AdobePhotoshop</span>,
+//         ],
+//       },
+//     ],
+//   },
 
-  {
-    title: 'experience',
-    info: [
-      {
-        title: 'Intern Full-stack Developer - Robotbulls, Geneva, Switzerland',
-        stage: '02/2024 - Present',
-      },
-      {
-        title: 'Mentor - University of Lodz',
-        stage: '2020 - 2023',
-      },
+//   {
+//     title: 'experience',
+//     info: [
+//       {
+//         title: 'Intern Full-stack Developer - Robotbulls, Geneva, Switzerland',
+//         stage: '02/2024 - Present',
+//       },
+//       {
+//         title: 'Mentor - University of Lodz',
+//         stage: '2020 - 2023',
+//       },
 
-    ],
-  },
-  {
-    title: 'credentials',
-    info: [
-      {
-        title: 'Bachelor of Computer Science - University of Lodz, Lodz, Poland',
-        stage: '2019 - 2024',
-      },
-    ],
-  },
-];
+//     ],
+//   },
+//   {
+//     title: 'credentials',
+//     info: [
+//       {
+//         title: 'Bachelor of Computer Science - University of Lodz, Lodz, Poland',
+//         stage: '2019 - 2024',
+//       },
+//     ],
+//   },
+// ];
 
 // components
 
 import Circles from '../../components/Circles';
+import { fadeIn } from '../../variants';
 
 // framer motion
 import { motion } from 'framer-motion';
-import { fadeIn } from '../../variants';
 
 // counter
 import CountUp from 'react-countup';
@@ -138,7 +145,7 @@ const About = () => {
             done remote work for many clients, counsulted for startups, and
             collaborated on digital products for business and consumer use.
           </motion.p>
-          <ParticlesContainer />
+          {/* <ParticlesContainer /> */}
           {/* counters */}
           <motion.div
             variants={fadeIn('right', 0.6)}
@@ -188,43 +195,99 @@ const About = () => {
           className='flex flex-col w-full xl:max-w-[48%] h-[480px]'
         >
           <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'>
-            {aboutData.map((item, itemIndex) => {
-              return (
-                <div
-                  key={itemIndex}
-                  className={`${index === itemIndex &&
-                    'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'
-                    }  cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
-                  onClick={() => setIndex(itemIndex)}
-                >
-                  {item.title}
-                </div>
-              );
-            })}
+            <div
+              className={`${index === 0 &&
+                'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'
+                }  cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
+              onClick={() => setIndex(0)}
+            >
+              skills
+            </div>
+            <div
+              className={`${index === 1 &&
+                'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'
+                }  cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
+              onClick={() => setIndex(1)}
+            >
+              experience
+            </div>
+            <div
+              className={`${index === 2 &&
+                'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'
+                }  cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
+              onClick={() => setIndex(2)}
+            >
+              credentials
+            </div>
           </div>
           <div className='py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start'>
-            {aboutData[index].info.map((item, itemIndex) => {
-              return (
-                <div
-                  key={itemIndex}
-                  className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'
-                >
-                  {/* title */}
-                  <div className='font-light mb-2 md:mb-0'>{item.title}</div>
-                  <div className='hidden md:flex'>-</div>
-                  <div>{item.stage}</div>
-                  <div className='flex gap-x-4'>
-                    {/* icons */}
+            {index === 0 && (
+              <div>
 
-                    {item.icons?.map((icon, itemIndex) => {
-                      return <div key={itemIndex} className='text-sm text-white'>{icon}</div>;
-
-                    })}
+                <div className=' flex  md:flex-row  gap-x-2   '>
+                  <div className='flex'>
+                    <div className='text-white/60 font-semibold mb-2 md:mb-0'>Frontend</div>
+                    <div>-</div>
+                  </div>
+                  <div className=' flex flex-wrap md:flex-row  gap-x-3 items-center text-white '>
+                    <div className='flex items-center'><FaHtml5 />HTML5</div>
+                    <div className='flex items-center'><FaCss3 /> CSS3</div>
+                    <div className='flex items-center'><SiJavascript />JavaScript</div>
+                    <div className='flex items-center'><SiTypescript /> TypeScript</div>
+                    <div className='flex items-center'><FaReact />ReactJs</div>
+                    <div className='flex items-center'><SiNextdotjs />NextJs</div>
+                    <div className='flex items-center'><SiFramer />Farmer</div>
+                    <div className='flex items-center'><FaSass />Sass</div>
+                    <div className='flex items-center'><SiTailwindcss />Tailwind</div>
+                    <div className='flex items-center'><FaBootstrap />Bootstrap</div>
                   </div>
 
                 </div>
-              );
-            })}
+                <div className='py-4 flex  md:flex-row  gap-x-2   '>
+                  <div className='flex'>
+                    <div className='text-white/60 mb-2 md:mb-0 font-semibold'>Backend</div>
+                    <div>-</div>
+                  </div>
+                  <div className=' flex flex-wrap md:flex-row  gap-x-3 items-center text-white '>
+                    <div className='flex items-center'><FaNodeJs />NodeJs</div>
+                    <div className='flex items-center'><SiExpress /> ExpressJs</div>
+                    <div className='flex items-center'><SiMongodb />MongoDB</div>
+                    <div className='flex items-center'><FaLaravel />Laravel </div>
+                    <div className='flex items-center'><SiPostgresql />PostgreSQL</div>
+
+                  </div>
+
+                </div>
+                <div className=' flex  md:flex-row  gap-x-2   '>
+                  <div className='flex'>
+                    <div className='text-white/60 font-semibold mb-2 md:mb-0'>UX/UI Design</div>
+                    <div >-</div>
+                  </div>
+                  <div className=' flex flex-wrap md:flex-row  gap-x-3 items-center text-white '>
+                    <div className='flex items-center'><SiFigma />Figma</div>
+                    <div className='flex items-center'><SiAdobephotoshop /> AdobePhotoshop</div>
+                    <div className='flex items-center'><SiMongodb />PhotoPea</div>
+                  </div>
+
+                </div>
+              </div>
+            )}
+            {index === 1 && (
+              <div className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'>
+                <div className='font-light mb-2 md:mb-0'>Intern Full-stack Developer - Robotbulls, Geneva, Switzerland</div>
+                <div className='hidden md:flex'>-</div>
+                <div>02/2024 - Present</div>
+                <div>Mentor - University of Lodz</div>
+                <div>2020 - 2023</div>
+              </div>
+            )}
+            {index === 2 && (
+              <div className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'>
+                <div className='font-light mb-2 md:mb-0'>Bachelor of Computer Science - University of Lodz, Lodz, Poland</div>
+                <div className='hidden md:flex'>-</div>
+                <div>2019 - 2024</div>
+              </div>
+            )}
           </div>
         </motion.div>
       </div>
