@@ -26,10 +26,10 @@ const Home = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='h1'
+            className='h1 md:pt-0 text-[25px] md:text-6xl'
           >
 
-            <span className='text-accent '>Full-stack developer</span>
+            <span className='text-accent'>Full-stack developer</span>
           </motion.h1>
           {/* subtitle */}
           <motion.p
