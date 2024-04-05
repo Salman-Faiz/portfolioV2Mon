@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { useState } from 'react';
 
-
 // icons
 import {
   FaHtml5,
@@ -83,7 +82,7 @@ const About = () => {
             done remote work for many clients, counsulted for startups, and
             collaborated on digital products for business and consumer use.
           </motion.p>
-          {/* <ParticlesContainer /> */}
+          <ParticlesContainer />
           {/* counters */}
           <motion.div
             variants={fadeIn('right', 0.6)}
@@ -162,7 +161,7 @@ const About = () => {
             {index === 0 && (
               <div>
 
-                <div className=' flex  md:flex-row  gap-x-2   '>
+                <div className='flex md:flex-row gap-x-2'>
                   <div className='flex'>
                     <div className='text-white/60 font-semibold mb-2 md:mb-0'>Frontend</div>
                     <div>-</div>

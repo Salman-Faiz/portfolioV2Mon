@@ -5,15 +5,15 @@ export const workSlider = {
       images: [
         {
           title: 'title',
-          path: '/thumb1.jpg',
+          path: '/robotbulls.jpg',
         },
         {
           title: 'title',
-          path: '/thumb2.jpg',
+          path: '/blackCats.jpg',
         },
         {
           title: 'title',
-          path: '/thumb3.jpg',
+          path: '/photography1.jpg',
         },
         {
           title: 'title',
@@ -70,44 +70,163 @@ const WorkSlider = () => {
       modules={[Pagination]}
       className='h-[280px] sm:h-[480px]'
     >
-      {workSlider.slides.map((slide, index) => {
-        return (
-          <SwiperSlide key={index}>
-            <div className='grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer'>
-              {slide.images.map((image, index) => {
-                return (
-                  <div
-                    className='relative rounded-lg overflow-hidden flex items-center justify-center group'
-                    key={index}
-                  >
-                    <div className='flex items-center justify-center relative overflow-hidden group'>
-                      {/* image */}
-                      <Image src={image.path} width={500} height={300} alt='' />
-                      {/* overlay gradient */}
-                      <div className='absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700'></div>
-                      {/* title */}
-                      <div className='absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300'>
-                        <div className='flex items-center gap-x-2 text-[13px] tracking-[0.2em]'>
-                          {/* title part 1 */}
-                          <div className='delay-100'>LIVE</div>
-                          {/* title part 2 */}
-                          <div className='translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150'>
-                            PROJECT
-                          </div>
-                          {/* icon */}
-                          <div className='text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200'>
-                            <BsArrowRight />
-                          </div>
-                        </div>
-                      </div>
+      <SwiperSlide >
+        <div className='grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer'>
+          <div className='relative rounded-lg overflow-hidden flex items-center justify-center group' >
+            <div className='flex items-center justify-center relative overflow-hidden group'>
+              {/* image */}
+              <Image src='/robotbulls.jpg' width={500} height={300} alt='' />
+              {/* overlay gradient */}
+              <div className='absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700'></div>
+              {/* title */}
+              <div className='absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300'>
+                <a target='#' href="https://robotbulls.eth.limo">
+                  <div className='flex items-center gap-x-2 text-[13px] tracking-[0.2em]'>
+                    {/* title part 1 */}
+                    <div className='delay-100'>LIVE</div>
+                    {/* title part 2 */}
+                    <div className='translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150'>
+                      PROJECT
+                    </div>
+                    {/* icon */}
+                    <div className='text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200'>
+                      <BsArrowRight />
                     </div>
                   </div>
-                );
-              })}
+                </a>
+              </div>
+
             </div>
-          </SwiperSlide>
-        );
-      })}
+
+          </div>
+
+          {/* 2nd project */}
+
+          <div className='relative rounded-lg overflow-hidden flex items-center justify-center group'  >
+            <div className='flex items-center justify-center relative overflow-hidden group'>
+              {/* image */}
+              <Image src='/blackCats.jpg' width={500} height={300} alt='' />
+              {/* overlay gradient */}
+              <div className='absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700'></div>
+              {/* title */}
+              <div className='absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300'>
+                <a target='#' href="https://blackcats-team.web.app/">
+                  <div className='flex items-center gap-x-2 text-[13px] tracking-[0.2em]'>
+                    {/* title part 1 */}
+                    <div className='delay-100'>LIVE</div>
+                    {/* title part 2 */}
+                    <div className='translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150'>
+                      PROJECT
+                    </div>
+                    {/* icon */}
+                    <div className='text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200'>
+                      <BsArrowRight />
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          {/* 3rd project */}
+
+          <div className='relative rounded-lg overflow-hidden flex items-center justify-center group' >
+            <div className='flex items-center justify-center relative overflow-hidden group'>
+              {/* image */}
+              <Image src='/photography1.jpg' width={500} height={300} alt='' />
+              {/* overlay gradient */}
+              <div className='absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700'></div>
+              {/* title */}
+              <div className='absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300'>
+                <a target='#' href="https://photographer-client-side.web.app/">
+                  <div className='flex items-center gap-x-2 text-[13px] tracking-[0.2em]'>
+                    {/* title part 1 */}
+                    <div className='delay-100'>LIVE</div>
+                    {/* title part 2 */}
+                    <div className='translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150'>
+                      PROJECT
+                    </div>
+                    {/* icon */}
+                    <div className='text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200'>
+                      <BsArrowRight />
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          {/* 4th project */}
+
+          <div className='relative rounded-lg overflow-hidden flex items-center justify-center group' >
+            <div className='flex items-center justify-center relative overflow-hidden group'>
+              {/* image */}
+              <Image src='/doctr.jpg' width={500} height={300} alt='' />
+              {/* overlay gradient */}
+              <div className='absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700'></div>
+              {/* title */}
+              <div className='absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300'>
+                <a target='#' href="https://med-ease-solutions.web.app/">
+                  <div className='flex items-center gap-x-2 text-[13px] tracking-[0.2em]'>
+                    {/* title part 1 */}
+                    <div className='delay-100'>LIVE</div>
+                    {/* title part 2 */}
+                    <div className='translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150'>
+                      PROJECT
+                    </div>
+                    {/* icon */}
+                    <div className='text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200'>
+                      <BsArrowRight />
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </SwiperSlide>
+
+      {/* 2nd slide */}
+      <SwiperSlide >
+
+        {/* 5th project */}
+
+        <div className='grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer'>
+          <div className='relative rounded-lg overflow-hidden flex items-center justify-center group' >
+            <div className='flex items-center justify-center relative overflow-hidden group'>
+              {/* image */}
+              <Image src='/robotbulls.jpg' width={500} height={300} alt='' />
+              {/* overlay gradient */}
+              <div className='absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700'></div>
+              {/* title */}
+              <div className='absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300'>
+                <a target='#' href="https://robotbulls.eth.limo">
+                  <div className='flex items-center gap-x-2 text-[13px] tracking-[0.2em]'>
+                    {/* title part 1 */}
+                    <div className='delay-100'>LIVE</div>
+                    {/* title part 2 */}
+                    <div className='translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150'>
+                      PROJECT
+                    </div>
+                    {/* icon */}
+                    <div className='text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200'>
+                      <BsArrowRight />
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </SwiperSlide>
+
     </Swiper>
   );
 };
