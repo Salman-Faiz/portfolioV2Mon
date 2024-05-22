@@ -16,9 +16,6 @@ import Header from '../components/Header';
 import TopLeftImg from '../components/TopLeftImg';
 import Head from 'next/head';
 
-
-
-
 const Layout = ({ children }) => {
   return (
     <div
@@ -27,7 +24,6 @@ const Layout = ({ children }) => {
       <Head>
         <title>Muntasir's Portfolio</title>
         <link rel='icon' href='/favicon.png' />
-
       </Head>
 
       <TopLeftImg />

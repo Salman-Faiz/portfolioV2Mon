@@ -25,6 +25,7 @@ import {
   SiAdobephotoshop,
   SiJavascript,
   SiPhotopea,
+  SiRedux,
   SiExpress,
   SiFigma,
 } from 'react-icons/si';
@@ -46,7 +47,8 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className='h-[90vh] bg-primary/30 py-32 text-center xl:text-left overflow-y-auto'>
+    <div className='h-[90vh] lg:h-[100vh] bg-primary/30 pt-32 lg:pt-0 text-center xl:text-left overflow-y-auto   '>
+      <ParticlesContainer />
       <Circles />
       {/* avatar img */}
       <motion.div
@@ -58,7 +60,7 @@ const About = () => {
       >
 
       </motion.div>
-      <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6'>
+      <div className='container mx-auto h-full flex flex-col items-center xl:flex-row lg:gap-x-6'>
         {/* text */}
         <div className='flex-1 flex flex-col justify-center w-full sm:pt-16  lg:pt-0'>
           <motion.h3
@@ -66,7 +68,7 @@ const About = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='font-bold lg:text-4xl sm:text-xl'
+            className='font-bold lg:text-2xl xl:text-4xl '
 
           >
             Passionate <span className='text-accent'>Full-Stack Developer</span> Building Tomorrow's Web Solutions Today.
@@ -76,20 +78,20 @@ const About = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className=' mx-auto lg:mx-0  md:my-5 mb-6 md:mb-12 px-2 lg:px-0'
+            className=' mx-auto lg:mx-0  md:my-5 mb-6 md:mb-12  px-2 lg:px-0'
           >
             2 years ago, I began freelancing as a developer. Since then, I've
             done remote work for many clients, counsulted for startups, and
             collaborated on digital products for business and consumer use.
           </motion.p>
-          <ParticlesContainer />
+
           {/* counters */}
           <motion.div
             variants={fadeIn('right', 0.6)}
             initial='hidden'
             animate='show'
             exit='hidden'
-            className=' md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8'
+            className=' md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 lg:mb-0'
           >
             <div className='flex flex-1 xl:gap-x-6'>
               {/* experience */}
@@ -157,7 +159,7 @@ const About = () => {
               credentials
             </div>
           </div>
-          <div className='py-5 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start'>
+          <div className='py-5 flex flex-col gap-y-2 items-center xl:items-start'>
             {index === 0 && (
               <div>
 
@@ -172,6 +174,7 @@ const About = () => {
                     <div className='flex items-center'><SiJavascript />JavaScript</div>
                     <div className='flex items-center'><SiTypescript /> TypeScript</div>
                     <div className='flex items-center'><FaReact />ReactJs</div>
+                    <div className='flex items-center'><SiRedux />Redux</div>
                     <div className='flex items-center'><SiNextdotjs />NextJs</div>
                     <div className='flex items-center'><SiFramer />Farmer</div>
                     <div className='flex items-center'><FaSass />Sass</div>

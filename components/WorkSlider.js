@@ -68,7 +68,7 @@ const WorkSlider = () => {
         clickable: true,
       }}
       modules={[Pagination]}
-      className='h-[280px] sm:h-[480px]'
+      className='h-[280px] lg:h-[480px]'
     >
       <SwiperSlide >
         <div className='grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer'>

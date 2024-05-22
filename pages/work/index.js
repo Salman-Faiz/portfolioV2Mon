@@ -6,10 +6,12 @@ import Circles from '../../components/Circles';
 // framer motion
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
+import ParticlesContainer from '../../components/ParticlesContainer';
 
 const Work = () => {
   return (
-    <div className='h-full bg-primary/30 py-36 flex items-center'>
+    <div className='h-full bg-primary/30 py-24 lg:py-0 flex items-center relative overflow-y-scroll'>
+      {/* <ParticlesContainer /> */}
       <Circles />
       <div className='container mx-auto'>
         <div className='flex flex-col xl:flex-row gap-x-8'>
@@ -20,7 +22,7 @@ const Work = () => {
               initial='hidden'
               animate='show'
               exit='hidden'
-              className='h2 xl:mt-12'
+              className='h2 pt-80 md:pt-40 lg:pt-0 xl:mt-12'
             >
               My work <span className='text-accent'>.</span>
             </motion.h2>
@@ -29,10 +31,9 @@ const Work = () => {
               initial='hidden'
               animate='show'
               exit='hidden'
-              className='mb-4 max-w-[400px] mx-auto lg:mx-0'
+              className='mb-4 lg:mt-0 max-w-[400px] mx-auto lg:mx-0'
             >
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. A
-              eveniet dignissimos distinctio tempore harum laudantium.
+              Specializing in full-stack web development, I utilize ReactJS, NodeJS, NextJS, Tailwind CSS, Bootstrap, MongoDB, and PostgreSQL. Projects feature dynamic React-based front ends, efficient NodeJS back ends, and responsive designs with Tailwind CSS and Bootstrap. Data management is flexible, utilizing MongoDB for scalability and PostgreSQL for relational needs.
             </motion.p>
           </div>
 
