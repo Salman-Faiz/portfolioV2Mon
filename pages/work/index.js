@@ -10,11 +10,11 @@ import ParticlesContainer from '../../components/ParticlesContainer';
 
 const Work = () => {
   return (
-    <div className='h-full bg-primary/30 py-24 lg:py-0 flex items-center relative overflow-y-scroll'>
-      {/* <ParticlesContainer /> */}
+    <div className='h-full bg-primary/30 py-24 lg:py-0 flex items-center overflow-auto relative '>
+      <ParticlesContainer />
       <Circles />
-      <div className='container mx-auto'>
-        <div className='flex flex-col xl:flex-row gap-x-8'>
+      <div className='container mx-auto '>
+        <div className='flex flex-col xl:flex-row gap-x-8 '>
           {/* text */}
           <div className='text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0'>
             <motion.h2

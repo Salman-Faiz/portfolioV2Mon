@@ -47,7 +47,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className='h-[90vh] lg:h-[100vh] bg-primary/30 pt-32 lg:pt-0 text-center xl:text-left overflow-y-auto   '>
+    <div className='h-[90vh] lg:h-[100vh] bg-primary/30 pt-32 lg:pt-0 text-center xl:text-left'>
       <ParticlesContainer />
       <Circles />
       {/* avatar img */}
@@ -60,7 +60,7 @@ const About = () => {
       >
 
       </motion.div>
-      <div className='container mx-auto h-full flex flex-col items-center xl:flex-row lg:gap-x-6'>
+      <div className='container mx-auto h-full flex flex-col items-center xl:flex-row lg:gap-x-6 overflow-auto relative'>
         {/* text */}
         <div className='flex-1 flex flex-col justify-center w-full sm:pt-16  lg:pt-0'>
           <motion.h3
