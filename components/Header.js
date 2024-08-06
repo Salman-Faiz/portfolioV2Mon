@@ -18,7 +18,7 @@ const Header = () => {
               width={220}
               height={48}
               alt=''
-              priority={true}>Muntasir Al Abid</h1>
+              priority="true">Muntasir Al Abid</h1>
 
           </Link>
           <button className='hover:text-accent'>Download Resume</button>
