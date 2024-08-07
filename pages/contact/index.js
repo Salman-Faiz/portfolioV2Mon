@@ -43,7 +43,7 @@ const Contact = () => {
   };
 
   return (
-    <div className=' md:!h-full bg-primary/30 overflow-y-auto relative' style={{ height: '89%' }}>
+    <div className=' md:!h-full bg-primary/30  relative' >
       <ParticlesContainer />
       <div className='container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full'>
         {/* text & form */}
@@ -54,7 +54,7 @@ const Contact = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='h2 text-center mb-12 mt-80 md:mt-20'
+            className='h2 text-center mb-12 mt-20 md:mt-20'
           >
             Let's <span className='text-accent'>connect.</span>
           </motion.h2>
