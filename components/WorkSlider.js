@@ -1,49 +1,3 @@
-// work slider data
-export const workSlider = {
-  slides: [
-    {
-      images: [
-        {
-          title: 'title',
-          path: '/robotbulls.jpg',
-        },
-        {
-          title: 'title',
-          path: '/blackCats',
-        },
-        {
-          title: 'title',
-          path: '/photography1.jpg',
-        },
-        {
-          title: 'title',
-          path: '/thumb4.jpg',
-        },
-      ],
-    },
-    {
-      images: [
-        {
-          title: 'title',
-          path: '/thumb4.jpg',
-        },
-        {
-          title: 'title',
-          path: '/thumb1.jpg',
-        },
-        {
-          title: 'title',
-          path: '/thumb2.jpg',
-        },
-        {
-          title: 'title',
-          path: '/thumb3.jpg',
-        },
-      ],
-    },
-  ],
-};
-
 // import swiper react components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -105,7 +59,7 @@ const WorkSlider = () => {
           <div className='relative rounded-lg overflow-hidden flex items-center justify-center group'  >
             <div className='flex items-center justify-center relative overflow-hidden group'>
               {/* image */}
-              <Image src='/blackCats.jpg' width={500} height={300} alt='' />
+              <Image src='/Ecom.png' width={500} height={300} alt='' />
               {/* overlay gradient */}
               <div className='absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700'></div>
               {/* title */}
