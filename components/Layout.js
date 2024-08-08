@@ -2,9 +2,11 @@
 // fonts
 import { Sora } from '@next/font/google';
 
+
 // font settings
 const sora = Sora({
   subsets: ['latin'],
+
   weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
 });
 
@@ -21,8 +23,7 @@ const Layout = ({ children }) => {
     >
       <Head>
         <title>Muntasir's Portfolio</title>
-        <link rel="icon" href="/favicon.png" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel='icon' href='/favicon.png' />
       </Head>
 
       <TopLeftImg />
