@@ -21,7 +21,7 @@ const Header = () => {
               priority="true">Muntasir Al Abid</h1>
 
           </Link>
-          <button className='hover:text-accent'>Download Resume</button>
+          <Link href="https://drive.google.com/file/d/1m4NphRZekeCJC7_B79Ju8_sHlAuFoTSk/view?usp=sharing" Target='#' className='hover:text-accent'>Download Resume</Link>
           {/* socials */}
           <Socials />
         </div>

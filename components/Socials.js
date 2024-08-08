@@ -23,9 +23,9 @@ const Socials = () => {
       <Link href="https://www.facebook.com/muntasiralabid/" target='#' className='hover:text-accent transition-all duration-300'>
         <RiFacebookLine />
       </Link>
-      {/* <Link href={''} className='hover:text-accent transition-all duration-300'>
+      <Link href='https://www.instagram.com/muntasir.____/profilecard/?igsh=enB0em11dGF6eHNp' target='#' className='hover:text-accent transition-all duration-300'>
         <RiInstagramLine />
-      </Link> */}
+      </Link>
       {/* <Link href={''} className='hover:text-accent transition-all duration-300'>
         <RiTwitterLine />
       </Link> */}
