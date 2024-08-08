@@ -56,7 +56,7 @@ const About = () => {
       >
 
       </motion.div>
-      <div className='container mx-auto h-full flex flex-col items-center xl:flex-row lg:gap-x-6 overflow-auto relative'>
+      <div className='container mx-auto h-full flex flex-col items-center xl:flex-row lg:gap-x-6 relative'>
         {/* text */}
         <div className='flex-1 flex flex-col justify-center w-full sm:pt-16  lg:pt-0'>
           <motion.h3
@@ -87,7 +87,7 @@ const About = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className=' md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 lg:mb-0'
+            className=' md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-5 lg:mb-0'
           >
             <div className='flex flex-1 xl:gap-x-6'>
               {/* experience */}
@@ -155,7 +155,7 @@ const About = () => {
               credentials
             </div>
           </div>
-          <div className='py-5 flex flex-col gap-y-2 items-center xl:items-start'>
+          <div className='py-5 mb-20 md:mb-0 flex flex-col gap-y-2 items-center xl:items-start'>
             {index === 0 && (
               <div>
 

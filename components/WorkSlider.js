@@ -9,7 +9,7 @@ export const workSlider = {
         },
         {
           title: 'title',
-          path: '/blackCats.jpg',
+          path: '/blackCats',
         },
         {
           title: 'title',

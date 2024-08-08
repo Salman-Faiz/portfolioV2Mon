@@ -19,7 +19,7 @@ import Head from 'next/head';
 const Layout = ({ children }) => {
   return (
     <div
-      className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative overflow-y-auto  `}
+      className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative overflow-y-auto md:overflow-y-hidden `}
     >
       <Head>
         <title>Muntasir's Portfolio</title>
