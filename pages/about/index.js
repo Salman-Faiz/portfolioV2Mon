@@ -194,6 +194,19 @@ const About = () => {
                   </div>
 
                 </div>
+
+                <div className=' flex  md:flex-row  gap-x-2   '>
+                  <div className='flex'>
+                    <div className='text-white/60 font-semibold mb-2 md:mb-0'>BlockChain</div>
+                    <div >-</div>
+                  </div>
+                  <div className=' flex flex-wrap md:flex-row  gap-x-3 items-center text-white '>
+                    <div className='flex items-center'><SiFigma />Figma</div>
+                    <div className='flex items-center'><SiAdobephotoshop /> AdobePhotoshop</div>
+                    <div className='flex items-center'><SiMongodb />PhotoPea</div>
+                  </div>
+
+                </div>
                 <div className=' flex  md:flex-row  gap-x-2   '>
                   <div className='flex'>
                     <div className='text-white/60 font-semibold mb-2 md:mb-0'>UX/UI Design</div>
