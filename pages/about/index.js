@@ -211,7 +211,7 @@ const About = () => {
             {index === 1 && (
               <div className='items-center text-white/60'>
                 <div className='flex font-light mb-2 gap-x-1'>
-                  <div><span className='font-semibold'>Intern</span> - Full-stack Developer - Robotbulls, Annemasse, France</div>
+                  <div><span className='font-semibold'>Intern</span> - Full-stack Developer - Robotbulls, Paris, France</div>
                   <div>-</div>
                   <div>02/2024 - Present</div>
                 </div>
